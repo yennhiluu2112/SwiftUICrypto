@@ -18,6 +18,7 @@ struct HomeView: View {
         
             VStack {
                 homeHeader
+                HomeStatView(showPortfolio: $showPortfolio)
                 SearchBarView(searchText: $vm.searchText)
                 columnTitles
                 
@@ -34,12 +35,6 @@ struct HomeView: View {
             }
         }
     }
-}
-
-#Preview {
-    HomeView()
-        .toolbar(.hidden)
-        .environmentObject(DeveloperPreview.instance.homeVM)
 }
 
 extension HomeView {
@@ -105,4 +100,11 @@ extension HomeView {
         .foregroundColor(.theme.secondaryText)
         .padding(.horizontal)
     }
+}
+
+
+#Preview {
+    HomeView()
+        .toolbar(.hidden)
+        .environmentObject(DeveloperPreview.instance.homeVM)
 }

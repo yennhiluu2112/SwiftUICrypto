@@ -11,6 +11,8 @@
 		FC6603472CEC711700C66AB5 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6603462CEC711700C66AB5 /* SearchBarView.swift */; };
 		FC6603492CEC787200C66AB5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6603482CEC787200C66AB5 /* UIApplication.swift */; };
 		FC66034B2CEC84F100C66AB5 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66034A2CEC84F100C66AB5 /* StatisticModel.swift */; };
+		FC66034D2CEC875C00C66AB5 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66034C2CEC875C00C66AB5 /* StatisticView.swift */; };
+		FC66034F2CEC8CEE00C66AB5 /* HomeStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66034E2CEC8CEE00C66AB5 /* HomeStatView.swift */; };
 		FCEB69A22CE885E10065E4E6 /* SwiftUICryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB69A12CE885E10065E4E6 /* SwiftUICryptoApp.swift */; };
 		FCEB69A42CE885E10065E4E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB69A32CE885E10065E4E6 /* ContentView.swift */; };
 		FCEB69A62CE885E30065E4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEB69A52CE885E30065E4E6 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		FC6603462CEC711700C66AB5 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		FC6603482CEC787200C66AB5 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		FC66034A2CEC84F100C66AB5 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		FC66034C2CEC875C00C66AB5 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		FC66034E2CEC8CEE00C66AB5 /* HomeStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatView.swift; sourceTree = "<group>"; };
 		FCEB699E2CE885E10065E4E6 /* SwiftUICrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEB69A12CE885E10065E4E6 /* SwiftUICryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICryptoApp.swift; sourceTree = "<group>"; };
 		FCEB69A32CE885E10065E4E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			children = (
 				FCEB69B62CE88E040065E4E6 /* HomeView.swift */,
 				FCEB69C12CE8E75E0065E4E6 /* CoinRowView.swift */,
+				FC66034E2CEC8CEE00C66AB5 /* HomeStatView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				FCEB69CF2CEB343C0065E4E6 /* CoinImage */,
 				FCEB69B92CE8905F0065E4E6 /* CircleButton */,
 				FC6603462CEC711700C66AB5 /* SearchBarView.swift */,
+				FC66034C2CEC875C00C66AB5 /* StatisticView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -286,11 +292,13 @@
 				FCEB69A42CE885E10065E4E6 /* ContentView.swift in Sources */,
 				FC6603452CEBA36A00C66AB5 /* LocalFileManager.swift in Sources */,
 				FCEB69B72CE88E040065E4E6 /* HomeView.swift in Sources */,
+				FC66034D2CEC875C00C66AB5 /* StatisticView.swift in Sources */,
 				FCEB69D32CEB345D0065E4E6 /* CoinImageView.swift in Sources */,
 				FCEB69A22CE885E10065E4E6 /* SwiftUICryptoApp.swift in Sources */,
 				FC6603492CEC787200C66AB5 /* UIApplication.swift in Sources */,
 				FCEB69BB2CE890700065E4E6 /* CircleButtonView.swift in Sources */,
 				FCEB69B12CE88B080065E4E6 /* Color.swift in Sources */,
+				FC66034F2CEC8CEE00C66AB5 /* HomeStatView.swift in Sources */,
 				FC6603472CEC711700C66AB5 /* SearchBarView.swift in Sources */,
 				FCEB69CE2CEB18900065E4E6 /* NetworkingManager.swift in Sources */,
 				FCEB69BD2CE8950E0065E4E6 /* CircleButtonAnimationView.swift in Sources */,
