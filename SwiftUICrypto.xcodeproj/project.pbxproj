@@ -21,6 +21,7 @@
 		FC66035C2CEF183A00C66AB5 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC66035A2CEF183A00C66AB5 /* PortfolioContainer.xcdatamodeld */; };
 		FC66035E2CEF18D100C66AB5 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66035D2CEF18D100C66AB5 /* PortfolioDataService.swift */; };
 		FC6603602CEF391B00C66AB5 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66035F2CEF391B00C66AB5 /* HapticManager.swift */; };
+		FC6603652CEFA17600C66AB5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6603642CEFA17600C66AB5 /* DetailView.swift */; };
 		FCEB69A22CE885E10065E4E6 /* SwiftUICryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB69A12CE885E10065E4E6 /* SwiftUICryptoApp.swift */; };
 		FCEB69A42CE885E10065E4E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB69A32CE885E10065E4E6 /* ContentView.swift */; };
 		FCEB69A62CE885E30065E4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEB69A52CE885E30065E4E6 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		FC66035B2CEF183A00C66AB5 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		FC66035D2CEF18D100C66AB5 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		FC66035F2CEF391B00C66AB5 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		FC6603642CEFA17600C66AB5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FCEB699E2CE885E10065E4E6 /* SwiftUICrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEB69A12CE885E10065E4E6 /* SwiftUICryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICryptoApp.swift; sourceTree = "<group>"; };
 		FCEB69A32CE885E10065E4E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC6603612CEFA13800C66AB5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FC6603632CEFA16500C66AB5 /* ViewModels */,
+				FC6603622CEFA16100C66AB5 /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FC6603622CEFA16100C66AB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC6603642CEFA17600C66AB5 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC6603632CEFA16500C66AB5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		FCEB69952CE885E10065E4E6 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +168,7 @@
 		FCEB69B22CE88DCD0065E4E6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FC6603612CEFA13800C66AB5 /* Detail */,
 				FCEB69B82CE88FE60065E4E6 /* Components */,
 				FCEB69B32CE88DDE0065E4E6 /* Home */,
 			);
@@ -325,6 +352,7 @@
 				FC6603492CEC787200C66AB5 /* UIApplication.swift in Sources */,
 				FCEB69BB2CE890700065E4E6 /* CircleButtonView.swift in Sources */,
 				FCEB69B12CE88B080065E4E6 /* Color.swift in Sources */,
+				FC6603652CEFA17600C66AB5 /* DetailView.swift in Sources */,
 				FC6603602CEF391B00C66AB5 /* HapticManager.swift in Sources */,
 				FC66034F2CEC8CEE00C66AB5 /* HomeStatView.swift in Sources */,
 				FC6603472CEC711700C66AB5 /* SearchBarView.swift in Sources */,
