@@ -28,31 +28,35 @@ struct DetailView: View {
     
     private let spacing: CGFloat = 30
     
-    let coin: CoinModel
     init(coin: CoinModel) {
-        self.coin = coin
         _vm = StateObject(wrappedValue: DetailViewModel(coin: coin))
     }
     
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 20) {
-                    Text("")
-                        .frame(height: 150)
-                    overviewTitle
-                    Divider()
-                    overviewGrid
-                    additionalTitle
-                    Divider()
-                    additionalGrid
+                VStack(spacing: 0) {
+                    ChartView(coin: vm.coin)
+                        .padding(.vertical)
                     
+                    VStack(spacing: 20) {
+                        overviewTitle
+                        Divider()
+                        overviewGrid
+                        additionalTitle
+                        Divider()
+                        additionalGrid
+                        
+                    }
                 }
             }
             .navigationTitle(vm.coin.name)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    navigationBarTrailingItem
+                }
+            }
         }
-        .padding()
-        
     }
 }
 
@@ -93,6 +97,16 @@ extension DetailView {
                 StatisticView(stat: stat)
             }
         })
+    }
+    
+    private var navigationBarTrailingItem: some View {
+        HStack {
+            Text(vm.coin.symbol.uppercased())
+                .font(.headline)
+                .foregroundColor(.theme.secondaryText)
+            CoinImageView(coin: vm.coin)
+                .frame(width: 25, height: 25)
+        }
     }
 }
 
