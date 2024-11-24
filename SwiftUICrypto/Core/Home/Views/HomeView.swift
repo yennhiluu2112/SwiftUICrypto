@@ -10,10 +10,11 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
-    @State private var showPortfolio: Bool = false //animate right
+    @State private var showPortfolio: Bool = true //animate right
     @State private var showPortfolioView: Bool = false //show new sheet
     @State private var selectedCoin: CoinModel? = nil
     @State private var showDetailView: Bool = false
+    @State private var showSettingView: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -43,6 +44,9 @@ struct HomeView: View {
                     Spacer(minLength: 0)
                 }
             }
+            .sheet(isPresented: $showSettingView, content: {
+                SettingView()
+            })
             .navigationTitle("")
             .navigationDestination(isPresented: $showDetailView,
                                    destination: { DetailLoadingView(coin: $selectedCoin) })
@@ -58,6 +62,8 @@ extension HomeView {
                 .onTapGesture {
                     if showPortfolio {
                         showPortfolioView.toggle()
+                    } else {
+                        showSettingView.toggle()
                     }
                 }
                 .background(
