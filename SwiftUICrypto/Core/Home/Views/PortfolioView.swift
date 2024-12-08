@@ -32,11 +32,12 @@ struct PortfolioView: View {
                 }
                 trailingNavBarButton
             }
-            .onChange(of: vm.searchText, perform: { value in
-                if value == "" {
+            .onChange(of: vm.searchText, { oldValue, newValue in
+                if newValue == "" {
                     removeSelectedCoin()
                 }
             })
+            .background(Color.theme.background.ignoresSafeArea())
         }
     }
 }
